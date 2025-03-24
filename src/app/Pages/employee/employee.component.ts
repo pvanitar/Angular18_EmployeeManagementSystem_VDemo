@@ -71,7 +71,8 @@ export class EmployeeComponent implements OnInit{
   onDeleteEmployee(id:number){
     const isDelete=confirm("Are you sure want to Delete");
     if(isDelete){
-      this.masterService.deleteEmployeeById(id).subscribe((Res:IApiResponse)=>{
+      debugger
+      this.masterService.deleteEmployeeById(id).subscribe((res:IApiResponse)=>{
         alert("Employee Deleted Successfully!");
         this.getAllEmployees();
       },error=>{

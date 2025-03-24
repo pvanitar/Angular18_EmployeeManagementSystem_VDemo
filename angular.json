@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Angular18_EmployeeManagementSystem": {
+    "Angular18_EmployeeManagementSystem_VDemo": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -21,10 +21,10 @@
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
+              
+                "src/assets",
+                "src/favicon.ico"
+              
             ],
             "styles": [
               "./node_modules/bootstrap/dist/css/bootstrap.min.css",
@@ -61,10 +61,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Angular18_EmployeeManagementSystem:build:production"
+              "buildTarget": "Angular18_EmployeeManagementSystem_VDemo:build:production"
             },
             "development": {
-              "buildTarget": "Angular18_EmployeeManagementSystem:build:development"
+              "buildTarget": "Angular18_EmployeeManagementSystem_VDemo:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -81,10 +81,10 @@
             ],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
+              
+              "src/assets",
+              "src/favicon.ico"
+            
             ],
             "styles": [
               "src/styles.css"

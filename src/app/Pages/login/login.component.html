@@ -1,30 +1,26 @@
 <div class="parent">
-    <div class="container">
-        <div class="row">
-          <!-- Left Blank Side -->
-          <div class="col-lg-6"></div>
-      
-          <!-- Right Side Form -->
-          <div class="col-lg-6 d-flex align-items-center justify-content-center right-side">
-            <div class="form-2-wrapper">
-              <div class="logo text-center">
-                <h2>Logo</h2>
-              </div>
-              <h2 class="text-center mb-4">Sign Into Your Account</h2>
-              <form action="#">
-                <div class="mb-3 form-box">
-                  <input type="email" class="form-control" [(ngModel)]="loginObj.username" id="email" name="email" placeholder="Enter Your Email" required>
-                </div>
-                <div class="mb-3">
-                  <input type="password" class="form-control" id="password" [(ngModel)]="loginObj.password" name="password" placeholder="Enter Your Password" required>
-                </div>
-                <button type="submit" (click)="onLogin()" class="btn btn-outline-secondary login-btn w-100 mb-3">Login</button>
-              </form>
-      
-            </div>
+  <div class="container">
+    <div class="row">
+      <!-- Left Side Form -->
+      <div class="col-lg-6 d-flex align-items-center justify-content-center right-side">
+        <div class="form-2-wrapper">
+          <div class="logo text-center">
           </div>
+          <h5 class="text-center mb-4">Sign Into Your Account</h5>
+          <form action="#">
+            <div class="mb-3 form-box">
+              <input type="email" class="form-control" [(ngModel)]="loginObj.username" id="email" name="email" placeholder="Enter Your Username" required>
+            </div>
+            <div class="mb-3">
+              <input type="password" class="form-control" id="password" [(ngModel)]="loginObj.password" name="password" placeholder="Enter Your Password" required>
+            </div>
+            <button type="submit" (click)="onLogin()" class="btn btn-outline-secondary login-btn w-100 mb-3">Login</button>
+          </form>
         </div>
       </div>
-</div>
 
-  
+      <!-- Right Blank Side (Empty) -->
+      <div class="col-lg-6"></div>
+    </div>
+  </div>
+</div>

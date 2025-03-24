@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'Angular18_EmployeeManagementSystem' title`, () => {
+  it(`should have the 'dear' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('Angular18_EmployeeManagementSystem');
+    expect(app.title).toEqual('dear');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, Angular18_EmployeeManagementSystem');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, dear');
   });
 });

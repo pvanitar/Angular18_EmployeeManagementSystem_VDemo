@@ -21,3 +21,18 @@ export class Employee {
     this.createdDate=new Date();
   }
 }
+
+export class Dashboard{
+  totalEmployee: number;
+  totalProject: number;
+  recentEmployee: string;
+  recentProjects:string;
+
+  constructor(){
+    this.totalEmployee=0;
+    this.totalProject=0;
+    this.recentEmployee='';
+    this.recentProjects=''
+
+  }
+}
